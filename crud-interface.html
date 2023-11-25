@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud-interface.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="bg-dark">
+    <div class="head-crud text-light text-center bg-primary " style="margin: 40px; font-size: 20px;">
+        <h1>crud-system</h1>
+        <p> product-mangement-project</p>
+    </div>
+
+    <div class="container " id="inputs" style="margin-top: 80px;" >
+
+        <input onkeyup=" getTotal()" type="text" placeholder="title" id ="title" style="font-size: 21px;" >
+        
+        <div class="math m-4 " style="font-size: 20px;" >
+        <input onkeyup=" getTotal()" class="col-2" type="number" placeholder="price" id="price">
+        <input onkeyup=" getTotal()" class="col-2" type="number" placeholder="taxes" id="taxes">
+        <input onkeyup=" getTotal()" class="col-2 " type="number" placeholder="ads" id="ads">
+        <input onkeyup=" getTotal()" class="col-3" type="number" placeholder="discount" id="discount">
+        <small class="col-3 text-light " id="total" style="font-size: 20px;">total:0000</small>
+        </div>
+        <input class="m-2" type="text" placeholder="count" id="count" style="font-size: 20px;">
+        <input class="m-2" type="text" placeholder="category" id="category" style="font-size: 20px;">
+        <button class="btn btn-primary m-2 p-2 w-100 "  id="create">create</button>
+        <input class="m-2" type="search" placeholder="search" id="search" style="font-size: 20px;">
+        <button class="btn btn-danger m-2 p-2 w-100 ">search BY element</button>
+    </div>
+    <div class="table-responsive  p-2" style="font-size: 17px;">
+        <table class="table table-striped
+        table-hover	
+        table-borderless
+        table-secondary
+        align-middle">
+            <thead class="table-secondary">
+                <caption> <h3>clients-data</h3></caption>
+                <tr>
+                    <th>product</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>update</th>
+                    <th>delete</th>
+
+                </tr>
+                </thead>
+                <tbody id="tbody" class="table-group-divider">
+                    <!-- <tr class="table-primary" >
+                        <td scope="row">iphone</td>
+                        <td>20000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>70000</td>
+                        <td><button class="btn btn-primary w-100 " >update</button></td>
+                        <td><button class="btn btn-primary w-100 ">delete</button></td>
+                    </tr>
+                    <tr class="table-primary" >
+                        <td scope="row">iphone</td>
+                        <td>20000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>70000</td>
+                        <td><button class="btn btn-secondary w-100 " >update</button></td>
+                        <td><button class="btn btn-secondary w-100 ">delete</button></td>
+                    </tr>
+                    <tr class="table-primary" >
+                        <td scope="row">iphone</td>
+                        <td>20000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>70000</td>
+                        <td><button class="btn btn-secondary w-100 " >update</button></td>
+                        <td><button class="btn btn-secondary w-100 ">delete</button></td>
+                    </tr>
+                    <tr class="table-primary" >
+                        <td scope="row">iphone</td>
+                        <td>20000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>70000</td>
+                        <td><button class="btn btn-secondary w-100 " >update</button></td>
+                        <td><button class="btn btn-secondary w-100 ">delete</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot> -->
+        </table>
+    </div>
+    
+
+
+
+    <script src="curd.js"></script>
+</body>
+</html>
